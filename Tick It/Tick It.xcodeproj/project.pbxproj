@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F5DD5F22A1DFE7800419AD5 /* EventPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5DD5F12A1DFE7800419AD5 /* EventPresenter.swift */; };
+		0F5DD5F52A1DFFE200419AD5 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5DD5F42A1DFFE200419AD5 /* Event.swift */; };
+		0F5DD5F82A1E02F200419AD5 /* EventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5DD5F72A1E02F200419AD5 /* EventListView.swift */; };
 		0F6B46E02A1DF3CD0010E661 /* Tick_ItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B46DF2A1DF3CD0010E661 /* Tick_ItApp.swift */; };
 		0F6B46E22A1DF3CD0010E661 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B46E12A1DF3CD0010E661 /* ContentView.swift */; };
 		0F6B46E42A1DF3CE0010E661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F6B46E32A1DF3CE0010E661 /* Assets.xcassets */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F5DD5F12A1DFE7800419AD5 /* EventPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPresenter.swift; sourceTree = "<group>"; };
+		0F5DD5F42A1DFFE200419AD5 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		0F5DD5F72A1E02F200419AD5 /* EventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListView.swift; sourceTree = "<group>"; };
 		0F6B46DC2A1DF3CD0010E661 /* Tick It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tick It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F6B46DF2A1DF3CD0010E661 /* Tick_ItApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tick_ItApp.swift; sourceTree = "<group>"; };
 		0F6B46E12A1DF3CD0010E661 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +78,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F5DD5F02A1DFE6100419AD5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0F5DD5F12A1DFE7800419AD5 /* EventPresenter.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0F5DD5F32A1DFFD400419AD5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0F5DD5F42A1DFFE200419AD5 /* Event.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0F5DD5F62A1E02BA00419AD5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B46E32A1DF3CE0010E661 /* Assets.xcassets */,
+				0F6B46E52A1DF3CE0010E661 /* Tick_It.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		0F6B46D32A1DF3CD0010E661 = {
 			isa = PBXGroup;
 			children = (
@@ -95,10 +126,11 @@
 		0F6B46DE2A1DF3CD0010E661 /* Tick It */ = {
 			isa = PBXGroup;
 			children = (
+				0F5DD5F62A1E02BA00419AD5 /* Resources */,
+				0F5DD5F32A1DFFD400419AD5 /* Models */,
+				0F5DD5F02A1DFE6100419AD5 /* Core */,
 				0F6B470A2A1DF86B0010E661 /* Views */,
 				0F6B46DF2A1DF3CD0010E661 /* Tick_ItApp.swift */,
-				0F6B46E32A1DF3CE0010E661 /* Assets.xcassets */,
-				0F6B46E52A1DF3CE0010E661 /* Tick_It.entitlements */,
 				0F6B46E62A1DF3CE0010E661 /* Preview Content */,
 			);
 			path = "Tick It";
@@ -133,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				0F6B46E12A1DF3CD0010E661 /* ContentView.swift */,
+				0F5DD5F72A1E02F200419AD5 /* EventListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -267,8 +300,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F5DD5F82A1E02F200419AD5 /* EventListView.swift in Sources */,
+				0F5DD5F52A1DFFE200419AD5 /* Event.swift in Sources */,
 				0F6B46E22A1DF3CD0010E661 /* ContentView.swift in Sources */,
 				0F6B46E02A1DF3CD0010E661 /* Tick_ItApp.swift in Sources */,
+				0F5DD5F22A1DFE7800419AD5 /* EventPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +455,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Tick It/Tick_It.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Tick It/Resources/Tick_It.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tick It/Preview Content\"";
@@ -458,7 +494,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Tick It/Tick_It.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Tick It/Resources/Tick_It.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tick It/Preview Content\"";
